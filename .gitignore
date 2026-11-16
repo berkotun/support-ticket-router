@@ -1,0 +1,10 @@
+# Large files are not stored in the repository (R7) -> Hugging Face Hub
+models/
+data/raw/
+data/processed/
+results/predictions.csv
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.DS_Store
