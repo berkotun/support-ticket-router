@@ -1,0 +1,13 @@
+# Python 3.11 - 3.13
+# scikit-learn and gensim are pinned: the models are trained in Colab and
+# loaded by the app, so both sides must use the same versions.
+scikit-learn==1.9.1
+gensim==4.4.0
+torch>=2.4
+transformers>=4.44
+datasets>=3.0
+huggingface_hub>=0.24
+numpy
+pandas
+tabulate
+gradio>=5.0
