@@ -23,7 +23,7 @@ What makes this project different:
 Requires Python 3.11–3.13.
 
 ```bash
-git clone https://github.com/<your-github-user>/support-ticket-router.git
+git clone https://github.com/berkotun/support-ticket-router.git
 cd support-ticket-router
 python -m venv .venv
 .venv\Scripts\activate            # Windows   (macOS / Linux: source .venv/bin/activate)
@@ -32,7 +32,7 @@ python app.py                     # → open http://127.0.0.1:7860
 ```
 
 On the first run, `app.py` downloads the trained models (≈ 0.7 GB) from the public Hugging Face Hub repository
-set in `src/config.py → MODELS_REPO`. Everything runs on CPU.
+set in `src/config.py → MODELS_REPO` ([berktn/support-ticket-router-models](https://huggingface.co/berktn/support-ticket-router-models)). Everything runs on CPU.
 
 ## Architecture
 
@@ -88,7 +88,7 @@ python -m src.train_teacher        # BERT-base fine-tuning (GPU recommended)
 python -m src.distill              # knowledge distillation into DistilBERT
 python -m src.quantize             # dynamic INT8 quantization
 python -m src.benchmark            # → results/results_table.md
-python -m src.upload_models <hf-user>/support-ticket-router-models
+python -m src.upload_models berktn/support-ticket-router-models
 ```
 
 ## Results
